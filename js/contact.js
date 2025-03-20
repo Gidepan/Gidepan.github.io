@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const templateParams = {
             from_name: name,
-            from_email: email,
-            to_email: "gidepan002@gmail.com",
+            from_email: "gidepan002@gmail.com",
+            to_email: email,
             message: message
         };
 
