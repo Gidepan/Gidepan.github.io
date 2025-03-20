@@ -34,3 +34,60 @@
 /* .contact-content{
     padding-left: 30px;
 } */
+
+body.dark-theme {
+    background-color: #202f35;
+    color: lightgray;
+}
+
+.navbar.dark-theme {
+    background-color: #202f35;
+}
+.footer.dark-theme {
+    color: #202f35; /* changed from #1b1b1b */
+}
+
+.theme-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.alert {
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Courier', 'Consolas', monospace;
+}
+
+/* Make the main container take the full height minus the fixed navbar */
+.container {
+    min-height: calc(100vh - 56px); /* Subtract navbar height (56px) */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Sticky footer */
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+}

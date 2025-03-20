@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gideon Mrina</title>
+    <title>Contact - Gideon Mrina</title>
     <link rel="icon" href="asset/tombstone.png" type="image/x-icon">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
     <div class="">
@@ -19,7 +18,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active px-2">
+                    <li class="nav-item px-2">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item px-2">
@@ -35,64 +34,44 @@
                 </ul>
             </div>
         </nav>
-        <!-- this is the crappy body -->
-        <div class="container">
-            <div class="row whoami mt-5 pt-5 mb-2">
-                <div class="col-md-7">
-                    <h5>👨‍💻 Who Am I?</h5>
-                    <h6 id="typed-text"></h6>
-                    <h5>🚀 What I Do</h5>
-                    <ul>
-                        <li id="typed-item-1"></li>
-                        <li id="typed-item-2"></li>
-                        <li id="typed-item-3"></li>
-                        <li id="typed-item-4"></li>
-                    </ul>
-                </div>
-                <div class="col-md-4"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-7"></div>
-                <div class="col-md-5">
-                    <h5>💡 Skills & Tools</h5>
-                    <ul>
-                        <li id="typed-skill-1"></li>
-                        <li id="typed-skill-2"></li>
-                        <li id="typed-skill-3"></li>
-                    </ul>  
-                
-                </div>
-            </div>
-            <div class="row mission pb-3">
-                <div class="col-md-7">
-                    <h5>🎯 Current Mission</h5>
-                    <ul>
-                        <li id="typed-mission-1"></li>
-                        <li id="typed-mission-2"></li>
-                        <li id="typed-mission-3"></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class=" ">
+        <!-- Contact Form -->
+        <div class="container mt-5 pt-5">
+            <div class="row text-left">
+                <div class="col-md-8 offset-md-2">
                     <h5>📫 Contact Me</h5>
-                    <h6 class="contact-content">If you have cool projects, memes, or just want to say hi—drop by! 🚀</h6>
+                    <h6 class="contact-content pb-4">If you have cool projects, memes, or just want to say hi—drop by! 🚀</h6>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group pb-3">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
                 </div>
-            </div> 
-        </div>          
+            </div>
+        </div>
     </div>
     <!-- Include jQuery and Popper.js before Bootstrap's JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/contact.js"></script>
     <script src="js/theme-toggle.js"></script>
-<!-- Footer -->
-<footer class=" footer bg-light text-center text-lg-start mt-5 ">
-    <div class="text-center p-3 ">
-        © 2025 Gideon Mrina. All rights reserved.
-    </div>
-</footer>
+    <!-- Footer -->
+    <footer class="footer bg-light text-center text-lg-start mt-5">
+        <div class="text-center p-3">
+            © 2025 Gideon Mrina. All rights reserved.
+        </div>
+    </footer>
 </body>
 </html>
