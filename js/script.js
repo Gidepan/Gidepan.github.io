@@ -35,14 +35,14 @@ document.addEventListener('DOMContentLoaded', function() {
                                         showCursor: false,
                                         onComplete: function() {
                                             new Typed('#typed-skill-1', {
-                                                strings: ["Fluent in: PhP, JavaScript, Python, C++,Java"],
+                                                strings: ["Fluent in: PhP, JavaScript, Python, C++,Java,Dart"],
                                                 typeSpeed: 10,
                                                 backSpeed: 25,
                                                 loop: false,
                                                 showCursor: false,
                                                 onComplete: function() {
                                                     new Typed('#typed-skill-2', {
-                                                        strings: ["Frameworks I claim to know: Laravel, React js, FastAPI"],
+                                                        strings: ["Frameworks I claim to know: Laravel, React js, FastAPI, Flutter"],
                                                         typeSpeed: 10,
                                                         backSpeed: 25,
                                                         loop: false,
